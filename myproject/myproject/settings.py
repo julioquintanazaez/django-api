@@ -70,7 +70,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "myproject.wsgi.application"
-
+DJANGO_SETTINGS_MODULE = "myproject.settings"
+DJANGO_WSGI_MODULE = "myproject.wsgi"
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
