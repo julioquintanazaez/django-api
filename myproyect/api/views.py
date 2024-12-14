@@ -12,3 +12,4 @@ class HelloWorldView(APIView):
         serializer = HelloWorldSerializer(data=data)
         serializer.is_valid()
         return Response(serializer.data)
+
