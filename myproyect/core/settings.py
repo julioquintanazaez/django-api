@@ -70,6 +70,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "core.wsgi.application"
+DJANGO_SETTINGS_MODULE = "core.settings"
+DJANGO_WSGI_MODULE = "core.wsgi"
+
 
 
 # Database
