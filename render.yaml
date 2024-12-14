@@ -1,10 +1,10 @@
 services:
   - type: web
     plan: free
-    name: django-api
+    name: core
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn myproyect.asgi:application -k uvicorn.workers.UvicornWorker"    
+    startCommand: "python -m gunicorn core.asgi:application -k uvicorn.workers.UvicornWorker"    
     envVars:
       - key: SECRET_KEY
         generateValue: true
